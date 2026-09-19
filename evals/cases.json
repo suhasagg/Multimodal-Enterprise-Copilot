@@ -1,0 +1,12 @@
+[
+  {
+    "id": "policy",
+    "question": "What approval is required for refunds above $500?",
+    "expected": "manager approval"
+  },
+  {
+    "id": "vision",
+    "question": "Summarize the important information in the supplied screenshot.",
+    "metric": "human_or_multimodal_judge"
+  }
+]

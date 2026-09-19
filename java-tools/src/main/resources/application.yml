@@ -1,0 +1,21 @@
+server:
+  port: 8081
+spring:
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      chat:
+        options:
+          model: gpt-5.6-luna
+    mcp:
+      server:
+        name: enterprise-copilot-tools
+        version: 1.0.0
+        protocol: STREAMABLE
+        type: SYNC
+        instructions: "Tenant-aware enterprise tools for the multimodal copilot."
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
